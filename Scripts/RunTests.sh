@@ -38,7 +38,7 @@ if [ ! -e "$TEST_TARGET_EXECUTABLE_PATH" ]; then
   exit 1
 fi
 
-RUN_CMD="$TEST_TARGET_EXECUTABLE_PATH -RegisterForSystemEvents"
+RUN_CMD="\"$TEST_TARGET_EXECUTABLE_PATH\" -RegisterForSystemEvents"
 
 echo "Running: $RUN_CMD"
 $RUN_CMD
